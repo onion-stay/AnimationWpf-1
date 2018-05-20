@@ -272,7 +272,7 @@
                                 <DoubleAnimation
                                         BeginTime="0:0:3"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="692" To="1499" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="692" To="1499" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
@@ -287,7 +287,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -303,7 +303,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.1"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -319,7 +319,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.2"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -335,7 +335,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.3"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -351,7 +351,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.4"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -367,7 +367,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.5"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -383,7 +383,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.6"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -399,7 +399,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:1.7"
                                         Storyboard.TargetProperty="(Canvas.Top)"
-                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -415,7 +415,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.7"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1355" To="594" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1355" To="594" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -431,7 +431,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.6"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1304" To="529" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1304" To="529" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -447,7 +447,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.5"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1250" To="469" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1250" To="469" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -463,7 +463,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.4"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1200" To="409" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1200" To="409" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -479,7 +479,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.3"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1150" To="345" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1150" To="345" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -495,7 +495,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.2"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1075" To="280" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1075" To="280" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -511,7 +511,7 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2.1"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="1010" To="215" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="1010" To="215" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -527,7 +527,71 @@
                                     <DoubleAnimation
                                         BeginTime="0:0:2"
                                         Storyboard.TargetProperty="(Canvas.Left)"
-                                        From="958" To="150" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed">
+                                        From="958" To="150" Duration="0:0:2" AutoReverse="False">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Label.MouseLeftButtonUp">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard TargetName="Anim">
+                                    <DoubleAnimation
+                                        BeginTime="0:0:2.8"
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="1499" To="692" Duration="0:0:2" AutoReverse="False">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Label.MouseLeftButtonUp">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard TargetName="Menu">
+                                    <DoubleAnimation
+                                        BeginTime="0:0:3"
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="-3" To="800" Duration="0:0:2" AutoReverse="False">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Label.MouseLeftButtonUp">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard TargetName="Close">
+                                    <DoubleAnimation
+                                        BeginTime="0:0:3.1"
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="761" To="1569" Duration="0:0:2" AutoReverse="False">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="Label.MouseLeftButtonUp">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard TargetName="Minimized">
+                                    <DoubleAnimation
+                                        BeginTime="0:0:3.2"
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="722" To="1536" Duration="0:0:2" AutoReverse="False">
                                         <DoubleAnimation.EasingFunction>
                                             <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                         </DoubleAnimation.EasingFunction>
@@ -538,6 +602,9 @@
                     </EventTrigger>
                 </Label.Triggers>
             </Label>
+            <Rectangle x:Name="Menu" Fill="#FF2E86DE" Height="45" Stroke="White" Width="801" Canvas.Left="-3" StrokeThickness="0"/>
+            <Label x:Name="Minimized" HorizontalContentAlignment="Center" Content="_" Canvas.Left="722" Height="30" Width="30" Background="#FFEE5253" Foreground="White"/>
+            <Label x:Name="Close" HorizontalContentAlignment="Center" Content="X" Canvas.Left="761" Height="30" Width="30" Background="#FFEE5253" Foreground="White"/>
         </Canvas>
     </Grid>
 </Window>
