@@ -99,5 +99,35 @@ namespace WpfApplication1
         {
             O1.Content = "C";
         }
+
+        private void Close_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void Minimized_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void Minimized_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Minimized.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#2d3436"));
+        }
+
+        private void Close_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Close.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#2d3436"));
+        }
+
+        private void Minimized_MouseLeave(object sender, MouseEventArgs e)
+        {
+         Minimized.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffd63031"));
+        }
+
+        private void Close_MouseLeave(object sender, MouseEventArgs e)
+        {
+         Close.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffd63031"));
+        }
     }
 }

@@ -55,6 +55,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="TestWindow.xaml.cs">
+      <DependentUpon>TestWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="Ball.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -74,6 +77,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="TestWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -104,6 +111,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Files\american-football-clipart-black-and-white-black-and-white-ball-md.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IconsMainMenu\PaperPlane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IconsMainMenu\BallImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BallImg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="IconsMainMenu\Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BallImg1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,41 @@
+﻿<Window x:Class="WpfApplication1.TestWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="TestWindow" Height="600" Width="600">
+    <Grid Background="#FF00617E">
+        <Image x:Name="Setting_img" HorizontalAlignment="Left" Height="29" Margin="277,233,0,0" VerticalAlignment="Top" Width="30" Source="IconsMainMenu/PaperPlane.png" RenderTransformOrigin="0.495,0.509">
+        <Image.RenderTransform>
+            <RotateTransform x:Name="SettingAnimation" Angle="0" />
+        </Image.RenderTransform>
+        <Image.Triggers>
+            <EventTrigger RoutedEvent="FrameworkElement.MouseEnter">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+
+                            <DoubleAnimation Storyboard.TargetName="SettingAnimation"
+                                 Storyboard.TargetProperty="Angle" 
+                                To="360" Duration="0:0:1" RepeatBehavior="1x"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="FrameworkElement.MouseLeave">
+                <EventTrigger.Actions>
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetName="SettingAnimation"
+                                 Storyboard.TargetProperty="Angle" 
+                                To="-360" Duration="0:0:1" RepeatBehavior="1x"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger.Actions>
+            </EventTrigger>
+        </Image.Triggers>
+        </Image>
+    </Grid>
+</Window>
