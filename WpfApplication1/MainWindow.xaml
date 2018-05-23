@@ -588,6 +588,20 @@
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
+                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
+                        <BeginStoryboard>
+                            <Storyboard Storyboard.TargetName="LightBulbImg">
+                                <DoubleAnimation
+                                        BeginTime="0:0:3.5"
+                                        Storyboard.TargetProperty="(Canvas.Left)"
+                                        From="605" To="1366" Duration="0:0:2" AutoReverse="False">
+                                    <DoubleAnimation.EasingFunction>
+                                        <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
                 </Label.Triggers>
             </Label>
             <Rectangle x:Name="Menu" Fill="#FF2E86DE" Height="45" Stroke="White" Width="801" Canvas.Left="-3" StrokeThickness="0"/>
@@ -632,6 +646,44 @@
                 </Image.Triggers>
             </Image>
             <Image x:Name="BallImg" Height="140" Width="178" Source="IconsMainMenu/BallImg.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.506,0.507">
+                <Image.RenderTransform>
+                    <RotateTransform x:Name="SettingAnimationBulb" Angle="0" />
+                </Image.RenderTransform>
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="FrameworkElement.MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+
+                                    <DoubleAnimation Storyboard.TargetName="SettingAnimationBulb"
+                                 Storyboard.TargetProperty="Angle" 
+                                To="360" Duration="0:0:2">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="FrameworkElement.MouseLeave">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="SettingAnimationBulb"
+                                 Storyboard.TargetProperty="Angle" 
+                                To="-360" Duration="0:0:2">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+            <Image x:Name="LightBulbImg" Height="140" Width="178" Source="IconsMainMenu/LightBulb.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.506,0.507">
                 <Image.RenderTransform>
                     <RotateTransform x:Name="SettingAnimationBall" Angle="0" />
                 </Image.RenderTransform>

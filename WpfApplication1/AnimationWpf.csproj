@@ -122,10 +122,10 @@
     <Resource Include="BallImg.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="IconsMainMenu\Pencil.png" />
+    <Resource Include="BallImg1.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="BallImg1.png" />
+    <Resource Include="IconsMainMenu\LightBulb.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

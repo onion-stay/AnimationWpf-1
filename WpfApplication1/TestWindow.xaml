@@ -5,37 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="TestWindow" Height="600" Width="600">
-    <Grid Background="#FF00617E">
-        <Image x:Name="Setting_img" HorizontalAlignment="Left" Height="29" Margin="277,233,0,0" VerticalAlignment="Top" Width="30" Source="IconsMainMenu/PaperPlane.png" RenderTransformOrigin="0.495,0.509">
-        <Image.RenderTransform>
-            <RotateTransform x:Name="SettingAnimation" Angle="0" />
-        </Image.RenderTransform>
-        <Image.Triggers>
-            <EventTrigger RoutedEvent="FrameworkElement.MouseEnter">
-                <EventTrigger.Actions>
-                    <BeginStoryboard>
-                        <Storyboard>
-
-                            <DoubleAnimation Storyboard.TargetName="SettingAnimation"
-                                 Storyboard.TargetProperty="Angle" 
-                                To="360" Duration="0:0:1" RepeatBehavior="1x"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger.Actions>
-            </EventTrigger>
-            <EventTrigger RoutedEvent="FrameworkElement.MouseLeave">
-                <EventTrigger.Actions>
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <DoubleAnimation Storyboard.TargetName="SettingAnimation"
-                                 Storyboard.TargetProperty="Angle" 
-                                To="-360" Duration="0:0:1" RepeatBehavior="1x"/>
-                        </Storyboard>
-                    </BeginStoryboard>
-                </EventTrigger.Actions>
-            </EventTrigger>
-        </Image.Triggers>
+        Title="TestWindow" Height="400" Width="800" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FF2C3E50">
+        <Image x:Name="image" HorizontalAlignment="Left" Height="140" Margin="347,105,0,0" VerticalAlignment="Top" Width="141" Source="BallImg.png" Stretch="Fill">
+            <Image.Triggers>
+                <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard>
+                            <Storyboard Storyboard.TargetName="BallImg">
+                                <DoubleAnimation
+                                        BeginTime="0:0:1"
+                                        Storyboard.TargetProperty="(Width)"
+                                        From="605" To="1147" Duration="0:0:2" AutoReverse="False">
+                                    <DoubleAnimation.EasingFunction>
+                                        <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+            </Image.Triggers>
         </Image>
     </Grid>
 </Window>
