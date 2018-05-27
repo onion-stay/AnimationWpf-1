@@ -129,5 +129,19 @@ namespace WpfApplication1
         {
          Close.Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#ffd63031"));
         }
+        private void MenuHeight_CompleteAnimation(object sender, EventArgs e)
+        {
+            Menu.Visibility = Visibility.Hidden;
+        }
+
+        private void CloseHeight_CompleteAnimation(object sender, EventArgs e)
+        {
+            Close.Visibility = Visibility.Hidden;
+        }
+
+        private void MinimizedHeight_CompleteAnimation(object sender, EventArgs e)
+        {
+            Minimized.Visibility = Visibility.Hidden;
+        }
     }
 }

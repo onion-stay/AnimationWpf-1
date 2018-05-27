@@ -5,19 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="800" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen">
-    <Grid Background="#FF2C3E50">
-        <Canvas HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="1600" Margin="-800,0,0,0">
-            <Label x:Name="O1" Content="G" HorizontalAlignment="Left" VerticalAlignment="Top" Height="110" Width="60" Foreground="White" FontSize="72" Canvas.Left="150" Canvas.Top="133">
+        Title="MainWindow" Height="400" Width="800" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen"> <!--Tittle Settings-->
+    <Grid Background="#FF2C3E50"> <!--Grid Settings-->
+        <Canvas HorizontalAlignment="Left" Height="400" VerticalAlignment="Top" Width="1600" Margin="-800,0,0,0"> <!--Canvas Settings-->
+            <Label x:Name="O1" Content="G" HorizontalAlignment="Left" VerticalAlignment="Top" Height="110" Width="60" Foreground="White" FontSize="72" Canvas.Left="150" Canvas.Top="133"> <!--Label O1 Settings-->
                 <Label.Triggers>
-                    <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+                    <EventTrigger RoutedEvent="FrameworkElement.Loaded"> <!--Loaded Animation First Element start-->
                         <BeginStoryboard>
                             <Storyboard>
                                 <DoubleAnimation
-                                        BeginTime="0:0:0.8"
+                                        BeginTime="0:0:0.8" 
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="150" To="955" Duration="0:0:2" AutoReverse="False" Completed="DoubleAnimation_Completed_7">
-                                    <DoubleAnimation.EasingFunction>
+                                    <!--This settings DoubleAnimation Element Label O1-->
+                                    <DoubleAnimation.EasingFunction> <!--This Double Animation Easing Function.-->
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
@@ -264,8 +265,10 @@
                     </EventTrigger>
                 </Label.Triggers>
             </Label>
-            <Label x:Name="Anim" Content="Reverse" Canvas.Left="692" Canvas.Top="10" Height="48" Width="91" Foreground="White" FontSize="24" Background="#FF0984E3">
+            <Label x:Name="Anim" Content="Reverse" Canvas.Left="692" Canvas.Top="10" Height="48" Width="91" Foreground="White" FontSize="24" Background="#FF0984E3"> <!--Reverse Button Animation-->
                 <Label.Triggers>
+                    <!--Loaded Animation with Reverse Button-->
+                    <!--EventTrigger Loaded-->
                     <EventTrigger RoutedEvent="FrameworkElement.Loaded">
                         <BeginStoryboard>
                             <Storyboard>
@@ -280,319 +283,212 @@
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger>
+                    <!--EventTrigger MouseLeftButtonUp-->
                     <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
+                        <!--Reverse All Top Elements-->
                         <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O8">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1"
+                            <Storyboard>
+                                <!--Reverse Top Animation O8-->
+                                <DoubleAnimation Storyboard.TargetName="O8"
+                                        BeginTime="-0:0:0.8"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O7">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.1"
+                                <!--Reverse Top Animation O7-->
+                                <DoubleAnimation Storyboard.TargetName="O7"
+                                        BeginTime="-0:0:0.7"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O6">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.2"
+                                <!--Reverse Top Animation O6-->
+                                <DoubleAnimation Storyboard.TargetName="O6"
+                                        BeginTime="-0:0:0.6"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O5">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.3"
+                                <!--Reverse Top Animation O5-->
+                                <DoubleAnimation Storyboard.TargetName="O5"
+                                        BeginTime="-0:0:0.5"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O4">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.4"
+                                <!--Reverse Top Animation O4-->
+                                <DoubleAnimation Storyboard.TargetName="O4"
+                                        BeginTime="-0:0:0.4"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O3">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.5"
+                                <!--Reverse Top Animation O3-->
+                                <DoubleAnimation Storyboard.TargetName="O3"
+                                        BeginTime="-0:0:0.3"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O2">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.6"
+                                <!--Reverse Top Animation O2-->
+                                <DoubleAnimation Storyboard.TargetName="O2"
+                                        BeginTime="-0:0:0.2"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O1">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1.7"
+                                <!--Reverse Top Animation O1-->
+                                <DoubleAnimation Storyboard.TargetName="O1"
+                                        BeginTime="-0:0:0.1"
                                         Storyboard.TargetProperty="(Canvas.Top)"
                                         From="-500" To="133" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O8">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.7"
+                                <!--Reverse Left Animation O8-->
+                                <DoubleAnimation Storyboard.TargetName="O8"
+                                        BeginTime="0:0:0.9"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1355" To="594" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O7">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.6"
+                                <!--Reverse Left Animation O7-->
+                                <DoubleAnimation Storyboard.TargetName="O7"
+                                        BeginTime="0:0:0.8"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1304" To="529" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O6">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.5"
+                                <!--Reverse Left Animation O6-->
+                                <DoubleAnimation Storyboard.TargetName="O6"
+                                        BeginTime="0:0:0.7"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1250" To="469" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O5">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.4"
+                                <!--Reverse Left Animation O5-->
+                                <DoubleAnimation Storyboard.TargetName="O5"
+                                        BeginTime="0:0:0.6"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1200" To="409" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O4">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.3"
+                                <!--Reverse Left Animation O4-->
+                                <DoubleAnimation Storyboard.TargetName="O4"
+                                        BeginTime="0:0:0.5"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1150" To="345" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O3">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.2"
+                                <!--Reverse Left Animation O3-->
+                                <DoubleAnimation Storyboard.TargetName="O3"
+                                        BeginTime="0:0:0.4"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1075" To="280" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O2">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.1"
+                                <!--Reverse Left Animation O2-->
+                                <DoubleAnimation Storyboard.TargetName="O2"
+                                        BeginTime="0:0:0.3"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1010" To="215" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="O1">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2"
+                                <!--Reverse Left Animation O1-->
+                                <DoubleAnimation Storyboard.TargetName="O1"
+                                        BeginTime="0:0:0.2"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="958" To="150" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
+                                    <!--Reverse Left Animation Anim-->
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="Anim">
-                                <DoubleAnimation
-                                        BeginTime="0:0:2.8"
+                                <DoubleAnimation Storyboard.TargetName="Anim"
+                                        BeginTime="0:0:1"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="1499" To="692" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="Menu">
-                                <DoubleAnimation
-                                        BeginTime="0:0:3"
+                                <!--Reverse Left Animation Menu-->
+                                <DoubleAnimation Storyboard.TargetName="Menu"
+                                        BeginTime="0:0:1.2"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="-3" To="800" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="Close">
-                                <DoubleAnimation
-                                        BeginTime="0:0:3.1"
+                                <!--Reverse Left Animation Close-->
+                                <DoubleAnimation Storyboard.TargetName="Close"
+                                        BeginTime="0:0:1.3"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="761" To="1569" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="Minimized">
-                                <DoubleAnimation
-                                        BeginTime="0:0:3.2"
+                                <!--Reverse Left Animation Minimized-->
+                                <DoubleAnimation Storyboard.TargetName="Minimized"
+                                        BeginTime="0:0:1.4"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="722" To="1536" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="PaperPlaneImg">
-                                <DoubleAnimation
-                                        BeginTime="0:0:3.3"
+                                <!--Reverse Left Animation Paper Plane-->
+                                <DoubleAnimation Storyboard.TargetName="PaperPlaneImg"
+                                        BeginTime="0:0:1.5"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="605" To="917" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="BallImg">
-                                <DoubleAnimation
-                                        BeginTime="0:0:3.4"
+                                <!--Reverse Left Animation Ball Img-->
+                                <DoubleAnimation Storyboard.TargetName="BallImg"
+                                        BeginTime="0:0:1.6"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="605" To="1147" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
                                         <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
-                            </Storyboard>
-                        </BeginStoryboard>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
-                        <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="LightBulbImg">
-                                <DoubleAnimation
-                                        BeginTime="0:0:3.5"
+                                <!--Reverse Left Animation Light Bulb Img-->
+                                <DoubleAnimation Storyboard.TargetName="LightBulbImg"
+                                    BeginTime="0:0:1.7"
                                         Storyboard.TargetProperty="(Canvas.Left)"
                                         From="605" To="1366" Duration="0:0:2" AutoReverse="False">
                                     <DoubleAnimation.EasingFunction>
@@ -605,18 +501,21 @@
                 </Label.Triggers>
             </Label>
             <Rectangle x:Name="Menu" Fill="#FF2E86DE" Height="45" Stroke="White" Width="801" Canvas.Left="-3" StrokeThickness="0"/>
-            <Label x:Name="Minimized" HorizontalContentAlignment="Center" Content="_" Canvas.Left="722" Height="30" Width="30" Background="#FFD63031" Foreground="White" MouseLeftButtonUp="Minimized_MouseLeftButtonUp" MouseEnter="Minimized_MouseEnter" MouseLeave="Minimized_MouseLeave"/>
-            <Label x:Name="Close" HorizontalContentAlignment="Center" Content="X" Canvas.Left="761" Height="30" Width="30" Background="#FFD63031" Foreground="White" MouseLeftButtonUp="Close_MouseLeftButtonUp" MouseEnter="Close_MouseEnter" MouseLeave="Close_MouseLeave"/>
-            <Image x:Name="PaperPlaneImg" Height="140" Width="178" Source="IconsMainMenu/PaperPlane.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.522,0.457">
+            <Label x:Name="Minimized" HorizontalContentAlignment="Center" Content="_" Canvas.Left="722" Height="30" Width="30" Background="#FFD63031" Foreground="White" MouseLeftButtonUp="Minimized_MouseLeftButtonUp" MouseEnter="Minimized_MouseEnter" MouseLeave="Minimized_MouseLeave"/> <!--Minimized button-->
+            <Label x:Name="Close" HorizontalContentAlignment="Center" Content="X" Canvas.Left="761" Height="30" Width="30" Background="#FFD63031" Foreground="White" MouseLeftButtonUp="Close_MouseLeftButtonUp" MouseEnter="Close_MouseEnter" MouseLeave="Close_MouseLeave"/> <!--Close button-->
+            <Image x:Name="PaperPlaneImg" Height="140" Width="178" Source="IconsMainMenu/PaperPlane.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.522,0.457"> <!--Paper img Setings and Animation-->
+                <!--Image RenderTransform Settings with Paper Plane-->
                 <Image.RenderTransform>
+                    <!--Add Angle Settings-->
                     <RotateTransform x:Name="SettingAnimationPaperPlane" Angle="0" />
                 </Image.RenderTransform>
                 <Image.Triggers>
+                    <!--EventTrigger MouseEnter-->
                     <EventTrigger RoutedEvent="FrameworkElement.MouseEnter">
                         <EventTrigger.Actions>
                             <BeginStoryboard>
                                 <Storyboard>
-
+                                    <!--Angle Paper Plane Animaion-->
                                     <DoubleAnimation Storyboard.TargetName="SettingAnimationPaperPlane"
                                  Storyboard.TargetProperty="Angle" 
                                 To="360" Duration="0:0:2">
@@ -628,10 +527,12 @@
                             </BeginStoryboard>
                         </EventTrigger.Actions>
                     </EventTrigger>
+                    <!--EventTrigger MouseLeave-->
                     <EventTrigger RoutedEvent="FrameworkElement.MouseLeave">
                         <EventTrigger.Actions>
                             <BeginStoryboard>
                                 <Storyboard>
+                                    <!--Angle Paper Plane Animation-->
                                     <DoubleAnimation Storyboard.TargetName="SettingAnimationPaperPlane"
                                  Storyboard.TargetProperty="Angle" 
                                 To="-360" Duration="0:0:2">
@@ -643,47 +544,83 @@
                             </BeginStoryboard>
                         </EventTrigger.Actions>
                     </EventTrigger>
+                    <!--EventTrigger MouseLeftButtonUp-->
+                    <EventTrigger RoutedEvent="FrameworkElement.MouseLeftButtonUp">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <!--Ball Width-->
+                                <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetName="BallImg" Storyboard.TargetProperty="(Image.Width)"
+                                Duration="0:0:0.8" AutoReverse="False"
+                                RepeatBehavior="1x" DecelerationRatio="0.5" >
+                                    <LinearDoubleKeyFrame KeyTime="0%" Value="180" />
+                                    <LinearDoubleKeyFrame KeyTime="33%" Value="120" />
+                                    <LinearDoubleKeyFrame KeyTime="66%" Value="60" />
+                                    <LinearDoubleKeyFrame KeyTime="99%" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <!--Ball Height-->
+                                <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetName="BallImg" Storyboard.TargetProperty="(Image.Height)"
+                                Duration="0:0:0.8" AutoReverse="False"
+                                RepeatBehavior="1x" DecelerationRatio="0.5" >
+                                    <LinearDoubleKeyFrame KeyTime="0%" Value="180" />
+                                    <LinearDoubleKeyFrame KeyTime="33%" Value="120" />
+                                    <LinearDoubleKeyFrame KeyTime="66%" Value="60" />
+                                    <LinearDoubleKeyFrame KeyTime="99%" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <!--Light Width-->
+                                <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetName="LightBulbImg" Storyboard.TargetProperty="(Image.Width)"
+                                Duration="0:0:0.8" AutoReverse="False"
+                                RepeatBehavior="1x" DecelerationRatio="0.5" >
+                                    <LinearDoubleKeyFrame KeyTime="0%" Value="180" />
+                                    <LinearDoubleKeyFrame KeyTime="33%" Value="120" />
+                                    <LinearDoubleKeyFrame KeyTime="66%" Value="60" />
+                                    <LinearDoubleKeyFrame KeyTime="99%" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <!--Light Height-->
+                                <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetName="LightBulbImg" Storyboard.TargetProperty="(Image.Height)"
+                                Duration="0:0:0.8" AutoReverse="False"
+                                RepeatBehavior="1x" DecelerationRatio="0.5" >
+                                    <LinearDoubleKeyFrame KeyTime="0%" Value="180" />
+                                    <LinearDoubleKeyFrame KeyTime="33%" Value="120" />
+                                    <LinearDoubleKeyFrame KeyTime="66%" Value="60" />
+                                    <LinearDoubleKeyFrame KeyTime="99%" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <!--Menu Height-->
+                                <DoubleAnimation Storyboard.TargetName="Menu"
+                                        BeginTime="0:0:0"
+                                        Storyboard.TargetProperty="(Rectangle.Height)"
+                                        From="45" To="0" Duration="0:0:0.5" AutoReverse="False" Completed="MenuHeight_CompleteAnimation">
+                                    <DoubleAnimation.EasingFunction>
+                                        <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <!--Close Height-->
+                                <DoubleAnimation Storyboard.TargetName="Close"
+                                        BeginTime="0:0:0.4"
+                                        Storyboard.TargetProperty="(Rectangle.Height)"
+                                        From="30" To="0" Duration="0:0:0.5" AutoReverse="False" Completed="CloseHeight_CompleteAnimation">
+                                    <DoubleAnimation.EasingFunction>
+                                        <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                                <!--Minimized Height-->
+                                <DoubleAnimation Storyboard.TargetName="Minimized"
+                                        BeginTime="0:0:0.4"
+                                        Storyboard.TargetProperty="(Rectangle.Height)"
+                                        From="30" To="0" Duration="0:0:0.5" AutoReverse="False" Completed="MinimizedHeight_CompleteAnimation">
+                                    <DoubleAnimation.EasingFunction>
+                                        <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                    </DoubleAnimation.EasingFunction>
+                                </DoubleAnimation>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
                 </Image.Triggers>
             </Image>
-            <Image x:Name="BallImg" Height="140" Width="178" Source="IconsMainMenu/BallImg.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.506,0.507">
-                <Image.RenderTransform>
-                    <RotateTransform x:Name="SettingAnimationBulb" Angle="0" />
-                </Image.RenderTransform>
-                <Image.Triggers>
-                    <EventTrigger RoutedEvent="FrameworkElement.MouseEnter">
-                        <EventTrigger.Actions>
-                            <BeginStoryboard>
-                                <Storyboard>
-
-                                    <DoubleAnimation Storyboard.TargetName="SettingAnimationBulb"
-                                 Storyboard.TargetProperty="Angle" 
-                                To="360" Duration="0:0:2">
-                                        <DoubleAnimation.EasingFunction>
-                                            <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
-                                        </DoubleAnimation.EasingFunction>
-                                    </DoubleAnimation>
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </EventTrigger.Actions>
-                    </EventTrigger>
-                    <EventTrigger RoutedEvent="FrameworkElement.MouseLeave">
-                        <EventTrigger.Actions>
-                            <BeginStoryboard>
-                                <Storyboard>
-                                    <DoubleAnimation Storyboard.TargetName="SettingAnimationBulb"
-                                 Storyboard.TargetProperty="Angle" 
-                                To="-360" Duration="0:0:2">
-                                        <DoubleAnimation.EasingFunction>
-                                            <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
-                                        </DoubleAnimation.EasingFunction>
-                                    </DoubleAnimation>
-                                </Storyboard>
-                            </BeginStoryboard>
-                        </EventTrigger.Actions>
-                    </EventTrigger>
-                </Image.Triggers>
-            </Image>
-            <Image x:Name="LightBulbImg" Height="140" Width="178" Source="IconsMainMenu/LightBulb.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.506,0.507">
+            <Image x:Name="BallImg" Height="140" Width="178" Source="IconsMainMenu/BallImg.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.506,0.507"> <!--Ball img Settings-->
                 <Image.RenderTransform>
                     <RotateTransform x:Name="SettingAnimationBall" Angle="0" />
                 </Image.RenderTransform>
@@ -709,6 +646,44 @@
                             <BeginStoryboard>
                                 <Storyboard>
                                     <DoubleAnimation Storyboard.TargetName="SettingAnimationBall"
+                                 Storyboard.TargetProperty="Angle" 
+                                To="-360" Duration="0:0:2">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                </Image.Triggers>
+            </Image>
+            <Image x:Name="LightBulbImg" Height="140" Width="178" Source="IconsMainMenu/LightBulb.png" Canvas.Left="605" Canvas.Top="121" RenderTransformOrigin="0.506,0.507"> <!--Light img Settings-->
+                <Image.RenderTransform>
+                    <RotateTransform x:Name="SettingAnimationBulb" Angle="0" />
+                </Image.RenderTransform>
+                <Image.Triggers>
+                    <EventTrigger RoutedEvent="FrameworkElement.MouseEnter">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+
+                                    <DoubleAnimation Storyboard.TargetName="SettingAnimationBulb"
+                                 Storyboard.TargetProperty="Angle" 
+                                To="360" Duration="0:0:2">
+                                        <DoubleAnimation.EasingFunction>
+                                            <ElasticEase EasingMode="EaseInOut" Oscillations="1" Springiness="5" />
+                                        </DoubleAnimation.EasingFunction>
+                                    </DoubleAnimation>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger.Actions>
+                    </EventTrigger>
+                    <EventTrigger RoutedEvent="FrameworkElement.MouseLeave">
+                        <EventTrigger.Actions>
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <DoubleAnimation Storyboard.TargetName="SettingAnimationBulb"
                                  Storyboard.TargetProperty="Angle" 
                                 To="-360" Duration="0:0:2">
                                         <DoubleAnimation.EasingFunction>

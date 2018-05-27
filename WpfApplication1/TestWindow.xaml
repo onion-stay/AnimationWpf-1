@@ -7,25 +7,59 @@
         mc:Ignorable="d"
         Title="TestWindow" Height="400" Width="800" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen">
     <Grid Background="#FF2C3E50">
-        <Image x:Name="image" HorizontalAlignment="Left" Height="140" Margin="347,105,0,0" VerticalAlignment="Top" Width="141" Source="BallImg.png" Stretch="Fill">
-            <Image.Triggers>
-                <EventTrigger RoutedEvent="UIElement.MouseLeftButtonUp">
+        <Label x:Name="helloButton" Foreground="White" Content="" Margin="0,0,499,254">
+            <Label.Background>
+                <SolidColorBrush x:Name="labelColor" Color="#34495e" />
+            </Label.Background>
+            <Label.Triggers>
+                <EventTrigger RoutedEvent="FrameworkElement.MouseMove">
                     <EventTrigger.Actions>
                         <BeginStoryboard>
-                            <Storyboard Storyboard.TargetName="BallImg">
-                                <DoubleAnimation
-                                        BeginTime="0:0:1"
-                                        Storyboard.TargetProperty="(Width)"
-                                        From="605" To="1147" Duration="0:0:2" AutoReverse="False">
-                                    <DoubleAnimation.EasingFunction>
-                                        <ElasticEase EasingMode="EaseInOut" Oscillations="2" Springiness="25" />
-                                    </DoubleAnimation.EasingFunction>
-                                </DoubleAnimation>
+                            <Storyboard>
+                                <ColorAnimation Storyboard.TargetName="labelColor" Storyboard.TargetProperty="Color"
+                              From="{Binding ElementName=labelColor, Path=Color}" To="#3498db"
+                              AutoReverse="False" RepeatBehavior="0:0:1" Duration="0:0:2">
+                                </ColorAnimation>
                             </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger.Actions>
                 </EventTrigger>
-            </Image.Triggers>
-        </Image>
+            </Label.Triggers>
+        </Label>
+        <Canvas Margin="0,177,127,0" Background="#FF636E72">
+            <Ellipse HorizontalAlignment="Center" Width="180" Height="180" Canvas.Bottom="0" Canvas.Left="194" Fill="#FF55EFC4" Canvas.Top="25" RenderTransformOrigin="0.693,0.822">
+
+                <Ellipse.Triggers>
+                    <EventTrigger RoutedEvent="Ellipse.MouseLeftButtonUp">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <!--Ellipse Width-->
+                                <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Ellipse.Width)"
+                                Duration="0:0:0.8" AutoReverse="False"
+                                RepeatBehavior="1x" DecelerationRatio="0.5" >
+                                    <LinearDoubleKeyFrame KeyTime="0%" Value="180" />
+                                    <LinearDoubleKeyFrame KeyTime="33%" Value="120" />
+                                    <LinearDoubleKeyFrame KeyTime="66%" Value="60" />
+                                    <LinearDoubleKeyFrame KeyTime="99%" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                <!--Ellipse Height-->
+                                <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetProperty="(Ellipse.Height)"
+                                Duration="0:0:0.8" AutoReverse="False"
+                                RepeatBehavior="1x" DecelerationRatio="0.5" >
+                                    <LinearDoubleKeyFrame KeyTime="0%" Value="180" />
+                                    <LinearDoubleKeyFrame KeyTime="33%" Value="120" />
+                                    <LinearDoubleKeyFrame KeyTime="66%" Value="60" />
+                                    <LinearDoubleKeyFrame KeyTime="99%" Value="0" />
+                                </DoubleAnimationUsingKeyFrames>
+                                
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Ellipse.Triggers>
+            </Ellipse>
+        </Canvas>
     </Grid>
+
 </Window>
